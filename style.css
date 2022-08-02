@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 50vw;
+  min-width: 450px;
+  height: 90vh;
+  background-color: #c4c4c4;
+  z-index: 50;
+}
+
+.player {
+  height: 50px;
+  width: 50px;
+  background-color: #57a757;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 5px solid #000;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.puck {
+  height: 20px;
+  width: 20px;
+  background-color: #a75757;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  border: 5px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, inset 0.1s ease-in-out;
+}
